@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">  
+    <title>Unity WebGL Player | mov-enruta-tus-sentidos</title>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      UnityLoader.instantiate("unityContainer", "Build/mov-enruta-build.json");
+    </script>
+    <script>
+      window.addEventListener('touchstart', function() {
+
+// create new buffer source for playback with an already
+// loaded and decoded empty sound file
+var source = myContext.createBufferSource();
+source.buffer = myDecodedBuffer;
+
+// connect to output (your speakers)
+source.connect(myContext.destination);
+
+// play the file
+source.noteOn(0);
+
+}, false);
+    </script>
+  </head>
+  <body>
+    <div id="unityContainer" style="width: 540px; height: 960px; margin: auto"></div>
+  </body>
+</html>
