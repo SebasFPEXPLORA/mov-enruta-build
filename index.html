@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Unity WebGL Player | mov-enruta-tus-sentidos</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+    <link rel="stylesheet" href="TemplateData/style.css" />
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/mov-enruta-build.json", {onProgress: UnityProgress});
+      UnityLoader.compatibilityCheck = function (e, t, r) {
+        t()
+      }
+      var unityInstance = UnityLoader.instantiate('unityContainer', 'Build/mov-enruta-build.json', { onProgress: UnityProgress })
     </script>
   </head>
   <body style="width: 100vw; height: 100vh">
@@ -18,4 +21,6 @@
     </div>
   </body>
 </html>
-
+<!-- https://teams.microsoft.com/l/meetup-join/19%3ameeting_NWIyM2E5ZDItNmE4NC00YzdlLWFiM2QtYjJkZThiOWQzOWYw%40thread.v2/0?context=%7b%22Tid%22%3a%229c48e088-5e44-4b0d-93a0-eeb2c6127c3d%22%2c%22Oid%22%3a%222cc76568-dbe5-4798-aa58-9107b0e9aa9e%22%7d>
+https://teams.microsoft.com/l/meetup-join/19%3ameeting_YTY5NDA4ODctMjUyMS00ZjY2LWJiOTItNDUxZTcxMWFiNTU1%40thread.v2/0?context=%7b%22Tid%22%3a%229c48e088-5e44-4b0d-93a0-eeb2c6127c3d%22%2c%22Oid%22%3a%222cc76568-dbe5-4798-aa58-9107b0e9aa9e%22%7d>
+https://teams.microsoft.com/l/meetup-join/19%3ameeting_YTY5NDA4ODctMjUyMS00ZjY2LWJiOTItNDUxZTcxMWFiNTU1%40thread.v2/0?context=%7b%22Tid%22%3a%229c48e088-5e44-4b0d-93a0-eeb2c6127c3d%22%2c%22Oid%22%3a%222cc76568-dbe5-4798-aa58-9107b0e9aa9e%22%7d> -->
